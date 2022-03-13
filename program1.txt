@@ -1,0 +1,11 @@
+func square(a) = a * a;
+func square_a_then_add_b(a, b) = square(a) + b;
+final_value = square_a_then_add_b(2,1);
+
+func block_function(num1, num2) = {
+	func block_cube(a) = a * a * a;
+	result = block_cube(num1) + num2;
+	return result;
+};
+
+d = -block_function(3,6)
